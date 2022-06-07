@@ -10,7 +10,7 @@
 		{
 			"name": "Create blog",
 			"request": {
-				"url": "localhost:7000/create-blog",
+				"url": "{{url}}/create-blog",
 				"method": "POST",
 				"header": [
 					{
@@ -30,7 +30,7 @@
 		{
 			"name": "Get blog by id",
 			"request": {
-				"url": "localhost:7000/get-blog/629f39672543b114ac2f10ef",
+				"url": "{{url}}get-blog/629f39672543b114ac2f10ef",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -41,13 +41,10 @@
 		{
 			"name": "Get blog",
 			"request": {
-				"url": "localhost:7000/get-blog/",
+				"url": "localhost:7000{{url}}/get-blog/",
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
+				"body": {},
 				"description": ""
 			},
 			"response": []
@@ -55,7 +52,7 @@
 		{
 			"name": "Delete blog",
 			"request": {
-				"url": "localhost:7000/delete-blog/629f39672543b114ac2f10ef",
+				"url": "{{url}}/delete-blog/629f39672543b114ac2f10ef",
 				"method": "DELETE",
 				"header": [],
 				"body": {},
@@ -66,7 +63,7 @@
 		{
 			"name": "Update blog",
 			"request": {
-				"url": "localhost:7000/update-blog/629f39672543b114ac2f10ef",
+				"url": "{{url}}/update-blog/629f39672543b114ac2f10ef",
 				"method": "PUT",
 				"header": [],
 				"body": {
