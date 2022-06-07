@@ -1,0 +1,81 @@
+{
+	"variables": [],
+	"info": {
+		"name": "iide test",
+		"_postman_id": "b8307b6e-0258-2148-67f3-cee57f6820cf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create blog",
+			"request": {
+				"url": "localhost:7000/create-blog",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Hello\",\n    \"category\": \"Health\",\n    \"content\": \"something\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get blog by id",
+			"request": {
+				"url": "localhost:7000/get-blog/629f39672543b114ac2f10ef",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get blog",
+			"request": {
+				"url": "localhost:7000/get-blog/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog",
+			"request": {
+				"url": "localhost:7000/delete-blog/629f39672543b114ac2f10ef",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update blog",
+			"request": {
+				"url": "localhost:7000/update-blog/629f39672543b114ac2f10ef",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"This is changed\",\n    \"content\":\"Changing content\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
